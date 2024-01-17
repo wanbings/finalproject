@@ -1,4 +1,15 @@
 h1{
-    color: #30a5ff;
+    color: #A64031;
     font-family: 'Fira Sans', sans-serif;
+}
+
+h3{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+button{
+    background-color: #A64031;
+    border: none;
+    color: white;
+    text-align: center;
 }
