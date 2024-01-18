@@ -7,9 +7,19 @@ h3{
     font-family: 'Fira Sans', sans-serif;
 }
 
-button{
+.button{
     background-color: #A64031;
-    border: none;
+    border-radius: 8px;
+    border-color: #A64031;
     color: white;
+
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.wrapper {
     text-align: center;
 }
+
