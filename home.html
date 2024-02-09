@@ -2,22 +2,193 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Olympic Recurve</title>
+    <title>X-Spot</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
-<h1 style="text-align: center; padding-top: 20px">Olympic Recurve Parts Selector Quiz</h1>
+<div>
+<h2 id="riser" style="padding-top: 15px;">Riser</h2>
+    <table>
+        <tr>
+            <td>
+                <div class="imgcontainer">
+                    <div class="imgwrap">
+                        <img class="image" src="images/riser/galaxycrescent.jpg">
+                        <p class="description">Galaxy Crescent (Beginner)<br><br>The Galaxy Crescent is one of the cheapest ILF risers on the market. It has all the necessary accessory mounts
+                            and is lightweight at 2.01 lbs, making it ideal for younger archers. It is a great entry level choice. However, the paint scratches easily and the bow will need to be replaced
+                            as it is not made to last long-term.</p>
+                    </div>
+                    <div><button class="cost" id="crescent">$99.99</button></div>
+                </div>
+            </td>
+            <td>
+                <div class="imgcontainer">
+                    <div><img src="images/riser/cartelfathom.JPG"></div>
+                    <div><button class="cost" id="fathom">$129.99</button></div>
+                </div>
+            </td>
+            <td>
+                <div class="imgcontainer">
+                    <div><img src="images/riser/hoytxakt.JPG"></div>
+                    <div><button class="cost" id="xakt">$379.99</button></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="imgcontainer">
+                    <div><img src="images/riser/mybowave.jpg"></div>
+                    <div><button class="cost" id="wave">$399.99</button></div>
+                </div>
+            </td>
+            <td>
+                <div class="imgcontainer">
+                    <div><img src="images/riser/winwinwiawis.jpg"></div>
+                    <div><button class="cost" id="winwinwiawis">$849.99</button></div>
+                </div>
+            </td>
+            <td>
+                <div class="imgcontainer">
+                    <div><img src="images/riser/hoytgmx.JPG"></div>
+                    <div><button class="cost" id=gmx">$849.99</button></div>
+                </div>
+            </td>
+        </tr>
+        <form method="get" action="#limbs">
+            <button class="next" id="risernext" style="top: 53.5%">Next</button>
+        </form>
+        <form method="get" action="home.html">
+            <button style="top: 53.5%;margin: 0;
+                    position: absolute;
+                    right: 93%;
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);">Back to Home</button>
+        </form>
+    </table>
 
-<h3 style="text-align: center;">Not sure what to buy for each part?</h3>
-<h3 style="text-align: center;">This quiz provides beginner-professional options for all the parts you need to build an Olympic Recurve bow. At the end of the quiz,
- the price of your build will be calculated.</h3>
-<h3 style="text-align: center;">Press start to begin.</h3>
-
-
-<div class="wrapper">
-    <button id="startbutton" class="button" style="margin-top: 100px;">Start</button>
 </div>
 
+<div>
+<h2 id="limbs" style="padding-top: 20px;">Limbs</h2>
+    <table>
+        <tr>
+            <td>
+                <div class="imgcontainer">
+                    <div><img src="images/limbs/bronzestar.jpg"></div>
+                    <div><button class="cost" id="bronzestar">$99.99</button></div>
+                </div>
+            </td>
+            <td>
+                <div class="imgcontainer">
+                    <div><img src="images/limbs/wnsexplore.jpg"></div>
+                    <div><button class="cost" id="wnsexplore">$99.99</button></div>
+                </div>
+            </td>
+            <td>
+                <div class="imgcontainer">
+                    <div><img src="images/limbs/wnsmotive.jpg"></div>
+                    <div><button class="cost" id="wnsmotive">$259.99</button></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="imgcontainer">
+                    <div><img src="images/limbs/xakt.jpg"></div>
+                    <div><button class="cost" id="xaktlimb">$359.99</button></div>
+                </div>
+            </td>
+            <td>
+                <div class="imgcontainer">
+                    <div><img src="images/limbs/hoytaxia.jpg"></div>
+                    <div><button class="cost" id="hoytaxia">$899.99</button></div>
+                </div>
+            </td>
+            <td>
+                <div class="imgcontainer">
+                    <div><img src="images/limbs/graphene.jpg"></div>
+                    <div><button class="cost" id="graphene">$799.99</button></div>
+                </div>
+            </td>
+        </tr>
+        <form method="get" action="#sight">
+            <button style="top: 150%"class="next">Next</button>
+        </form>
+        <form method="get" action="#riser">
+            <button style="top: 150%" class="back">Back</button>
+        </form>
+    </table>
+</div>
+
+<h2 id="sight" style="padding-top: 20px">Sight</h2>
+    <table>
+        <tr>
+            <td>
+                <div class="imgcontainer">
+                    <div class="imgwrap">
+                        <img class="image" src="images/sight/avalon.jpg">
+                        <p class="description">Galaxy Crescent (Beginner)<br><br>The Galaxy Crescent is one of the cheapest ILF risers on the market. It has all the necessary accessory mounts
+                            and is lightweight at 2.01 lbs, making it ideal for younger archers. It is a great entry level choice. However, the paint scratches easily and the bow will need to be replaced
+                            as it is not made to last long-term.</p>
+                    </div>
+                    <div><button class="cost" id="avalon">$99.99</button></div>
+                </div>
+            </td>
+            <td>
+                <div class="imgcontainer">
+                    <div class="imgwrap">
+                        <img class="image" src="images/sight/dualclick.jpg">
+                        <p class="description">Galaxy Crescent (Beginner)<br><br>The Galaxy Crescent is one of the cheapest ILF risers on the market. It has all the necessary accessory mounts
+                            and is lightweight at 2.01 lbs, making it ideal for younger archers. It is a great entry level choice. However, the paint scratches easily and the bow will need to be replaced
+                            as it is not made to last long-term.</p>
+                    </div>
+                    <div><button class="cost" id="dualclick">$99.99</button></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="imgcontainer">
+                    <div class="imgwrap">
+                        <img class="image" src="images/sight/ultima.jpg">
+                        <p class="description">Galaxy Crescent (Beginner)<br><br>The Galaxy Crescent is one of the cheapest ILF risers on the market. It has all the necessary accessory mounts
+                            and is lightweight at 2.01 lbs, making it ideal for younger archers. It is a great entry level choice. However, the paint scratches easily and the bow will need to be replaced
+                            as it is not made to last long-term.</p>
+                    </div>
+                    <div><button class="cost" id="ultima">$99.99</button></div>
+                </div>
+            </td>
+            <td>
+                <div class="imgcontainer">
+                    <div class="imgwrap">
+                        <img class="image" src="images/sight/axcel.jpg">
+                        <p class="description">Galaxy Crescent (Beginner)<br><br>The Galaxy Crescent is one of the cheapest ILF risers on the market. It has all the necessary accessory mounts
+                            and is lightweight at 2.01 lbs, making it ideal for younger archers. It is a great entry level choice. However, the paint scratches easily and the bow will need to be replaced
+                            as it is not made to last long-term.</p>
+                    </div>
+                    <div><button class="cost" id="axcel">$99.99</button></div>
+                </div>
+            </td>
+        </tr>
+        <form method="get" action="result.html">
+            <button style="top: 247.25%" class="next">Submit</button> <!--temporarily goes to result page, change it back to plunger later-->
+        </form>
+        <form method="get" action="#limbs">
+            <button style="top: 247.25%" class="back">Back</button>
+        </form>
+    </table>
+<h2 id="plunger" style="padding-top: 20px">Plunger</h2>
+
+<h2 id="longrod" style="padding-top: 20px">Stabilizers: Long Rod</h2>
+
+<h2 id="siderods" style="padding-top: 20px">Stabilizers: Side Rods</h2>
+
+<h2 id="vbar" style="padding-top: 20px">Stabilizers: V-Bar</h2>
+
 </body>
+<script>
+
+</script>
 </html>
