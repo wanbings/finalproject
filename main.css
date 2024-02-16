@@ -1,6 +1,7 @@
 h1{
     color: #A64031;
     font-family: 'Fira Sans', sans-serif;
+    text-align: center;
 }
 h2{
 
@@ -49,4 +50,51 @@ body {
 
 td{
     text-align: center;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+button{
+    background-color: #A64031;
+    color: whitesmoke;
+    border: 1px solid #A64031;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+}
+
+
+.next{
+    margin: 0;
+    position: absolute;
+    left: 95%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.back{
+    margin: 0;
+    position: absolute;
+    right: 95%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+button:hover{
+    cursor: pointer;
+}
+button .active{
+    background-color: pink;
+}
+
+.totalcost{
+    font-size: 40px;
+    text-align: center;
+    color: #A64031;
+    font-family: 'Fira Sans', sans-serif;
 }
