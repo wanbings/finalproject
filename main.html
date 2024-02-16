@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>X-Spot</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -18,41 +19,67 @@
                         <img class="image" src="images/riser/galaxycrescent.jpg">
                         <p class="description">Galaxy Crescent (Beginner)<br><br>The Galaxy Crescent is one of the cheapest ILF risers on the market. It has all the necessary accessory mounts
                             and is lightweight at 2.01 lbs, making it ideal for younger archers. It is a great entry level choice. However, the paint scratches easily and the bow will need to be replaced
-                            as it is not made to last long-term.</p>
+                            as it is not made to last long-term. It is constructed from magnesium.</p>
                     </div>
-                    <div><button class="cost" id="crescent">$99.99</button></div>
+                    <div><button type="button" class="riser" id="crescent">$99.99</button></div>
                 </div>
             </td>
             <td>
                 <div class="imgcontainer">
-                    <div><img src="images/riser/cartelfathom.JPG"></div>
-                    <div><button class="cost" id="fathom">$129.99</button></div>
+                    <div class="imgwrap">
+                        <img class="image" src="images/riser/cartelfathom.JPG">
+                        <p class="description">Cartel Fathom (Beginner)<br><br>As one of the most affordable risers available, the Fathom has a sleek, modern design. It has all the necessary accessory mounts
+                        and will be a sturdier beginner riser at 2.6 lbs. However, this weight may be too heavy for younger archers. As an entry level choice, it can only handle limbs up to 36 lbs and will soon
+                            need to be upgraded. It is constructed from cast aluminum.</p>
+                    </div>
+                    <div><button class="riser" id="fathom">$129.99</button></div>
                 </div>
             </td>
             <td>
                 <div class="imgcontainer">
-                    <div><img src="images/riser/hoytxakt.JPG"></div>
-                    <div><button class="cost" id="xakt">$379.99</button></div>
+                    <div class="imgwrap">
+                        <img class="image" src="images/riser/hoytxakt.JPG">
+                        <p class="description">Hoyt Xakt (Intermediate)<br><br>From one of the most notable brands in archery, the Hoyt Xakt is ideal for intermediate archers. It features the technology
+                        of professional Hoyt risers, such as Dynamic Flex Control, for a cheaper price. It weighs in at 2.38 lbs. This bow is ideal for those who want a popular name brand that will likely last them
+                            for the rest of their recreational archery career.</p>
+                    </div>
+                    <div><button class="riser" id="xakt" onclick="selected('xakt')">$379.99</button></div>
                 </div>
             </td>
         </tr>
         <tr>
             <td>
                 <div class="imgcontainer">
-                    <div><img src="images/riser/mybowave.jpg"></div>
-                    <div><button class="cost" id="wave">$399.99</button></div>
+                    <div class="imgwrap">
+                        <img class="image" src="images/riser/mybowave.jpg">
+                        <p class="description">Mybo Wave XR (Intermediate)<br><br>Made in the UK, this bow is good for those who have parts that use the metric system. The riser has an offset design for improved lateral
+                            balance. It comes in over 8 beautiful anodised colors. The riser weighs in at 2.5 pounds and is constructed from 6082 aluminum. It is a good choice for any archers looking for an aesthetic bow that will
+                        provide a solid performance in the long run.</p>
+                    </div>
+                    <div><button class="riser" id="wave">399.99</button></div>
                 </div>
             </td>
             <td>
                 <div class="imgcontainer">
-                    <div><img src="images/riser/winwinwiawis.jpg"></div>
-                    <div><button class="cost" id="winwinwiawis">$849.99</button></div>
+                    <div class="imgwrap">
+                        <img class="image" src="images/riser/winwinwiawis.jpg">
+                        <p class="description">Win&Win WIAWIS ATF-DX (Pro)<br><br>From one of the most notable brands in archery, the Win&Win WIAWIS is one of the highest quality bows on the market. It has a Mathews
+                        EHS dampening system to improve shot feeling and accuracy. It weighs in at 3 pounds and is constructed from CNC Machined Aluminum. It is recommended for experienced and pro archers who cannot
+                        sacrifice any points during competitions. It is not recommended inexperienced archers purchase this, as it is not required at their level and it is extremely pricey.</p>
+                    </div>
+                    <div><button class="riser" id="winwinwiawis">849.99</button></div>
                 </div>
             </td>
             <td>
                 <div class="imgcontainer">
-                    <div><img src="images/riser/hoytgmx.JPG"></div>
-                    <div><button class="cost" id=gmx">$849.99</button></div>
+                    <div class="imgwrap">
+                        <img class="image" src="images/riser/hoytgmx.jpg">
+                        <p class="description">Hoyt GMX 3 Series (Pro)<br><br>Used by internationally ranked archers, this bow will ensure a smooth shot. Unlike the other Hoyt risers, this riser can accept ILF limbs like other risers.
+                            It features the Dynamic Balance System, Perfect Balance Weight System, and Dynamic Flex Control, all made to improve your shot feeling. The GMX has a high quality construction of premium stainless steel,
+                            weighing in at 2.93 lbs. The bow is targeted for those who are looking to compete with the best of the best. Otherwise, there are other cheaper
+                        risers that can fulfill your needs.</p>
+                    </div>
+                    <div><button class="riser" id="gmx" >849.99</button></div>
                 </div>
             </td>
         </tr>
@@ -67,49 +94,78 @@
                     transform: translateY(-50%);">Back to Home</button>
         </form>
     </table>
-
 </div>
 
 <div>
-<h2 id="limbs" style="padding-top: 20px;">Limbs</h2>
+<h2 id="limbs" style="padding-top: 25px;">Limbs</h2>
     <table>
         <tr>
             <td>
                 <div class="imgcontainer">
-                    <div><img src="images/limbs/bronzestar.jpg"></div>
-                    <div><button class="cost" id="bronzestar">$99.99</button></div>
+                    <div class="imgwrap">
+                        <img class="image" src="images/limbs/bronzestar.jpg">
+                        <p class="description">Galaxy Crescent (Beginner)<br><br>The Galaxy Crescent is one of the cheapest ILF risers on the market. It has all the necessary accessory mounts
+                            and is lightweight at 2.01 lbs, making it ideal for younger archers. It is a great entry level choice. However, the paint scratches easily and the bow will need to be replaced
+                            as it is not made to last long-term. It is constructed from magnesium.</p>
+                    </div>
+                    <div><button type="button" class="limbs" id="bronzestar">$99.99</button></div>
                 </div>
             </td>
             <td>
                 <div class="imgcontainer">
-                    <div><img src="images/limbs/wnsexplore.jpg"></div>
-                    <div><button class="cost" id="wnsexplore">$99.99</button></div>
+                    <div class="imgwrap">
+                        <img class="image" src="images/limbs/wnsexplore.jpg">
+                        <p class="description">Galaxy Crescent (Beginner)<br><br>The Galaxy Crescent is one of the cheapest ILF risers on the market. It has all the necessary accessory mounts
+                            and is lightweight at 2.01 lbs, making it ideal for younger archers. It is a great entry level choice. However, the paint scratches easily and the bow will need to be replaced
+                            as it is not made to last long-term. It is constructed from magnesium.</p>
+                    </div>
+                    <div><button type="button" class="limbs" id="wnsexplore">$99.99</button></div>
                 </div>
             </td>
             <td>
                 <div class="imgcontainer">
-                    <div><img src="images/limbs/wnsmotive.jpg"></div>
-                    <div><button class="cost" id="wnsmotive">$259.99</button></div>
+                    <div class="imgwrap">
+                        <img class="image" src="images/limbs/wnsmotive.jpg">
+                        <p class="description">Galaxy Crescent (Beginner)<br><br>The Galaxy Crescent is one of the cheapest ILF risers on the market. It has all the necessary accessory mounts
+                            and is lightweight at 2.01 lbs, making it ideal for younger archers. It is a great entry level choice. However, the paint scratches easily and the bow will need to be replaced
+                            as it is not made to last long-term. It is constructed from magnesium.</p>
+                    </div>
+                    <div><button type="button" class="limbs" id="wnsmotive">$259.99</button></div>
                 </div>
             </td>
         </tr>
         <tr>
             <td>
                 <div class="imgcontainer">
-                    <div><img src="images/limbs/xakt.jpg"></div>
-                    <div><button class="cost" id="xaktlimb">$359.99</button></div>
+                    <div class="imgwrap">
+                        <img class="image" src="images/limbs/xakt.jpg">
+                        <p class="description">Galaxy Crescent (Beginner)<br><br>The Galaxy Crescent is one of the cheapest ILF risers on the market. It has all the necessary accessory mounts
+                            and is lightweight at 2.01 lbs, making it ideal for younger archers. It is a great entry level choice. However, the paint scratches easily and the bow will need to be replaced
+                            as it is not made to last long-term. It is constructed from magnesium.</p>
+                    </div>
+                    <div><button type="button" class="limbs" id="xaktlimb">$359.99</button></div>
                 </div>
             </td>
             <td>
                 <div class="imgcontainer">
-                    <div><img src="images/limbs/hoytaxia.jpg"></div>
-                    <div><button class="cost" id="hoytaxia">$899.99</button></div>
+                    <div class="imgwrap">
+                        <img class="image" src="images/limbs/hoytaxia.jpg">
+                        <p class="description">Galaxy Crescent (Beginner)<br><br>The Galaxy Crescent is one of the cheapest ILF risers on the market. It has all the necessary accessory mounts
+                            and is lightweight at 2.01 lbs, making it ideal for younger archers. It is a great entry level choice. However, the paint scratches easily and the bow will need to be replaced
+                            as it is not made to last long-term. It is constructed from magnesium.</p>
+                    </div>
+                    <div><button type="button" class="limbs" id="hoytaxia">$899.99</button></div>
                 </div>
             </td>
             <td>
                 <div class="imgcontainer">
-                    <div><img src="images/limbs/graphene.jpg"></div>
-                    <div><button class="cost" id="graphene">$799.99</button></div>
+                    <div class="imgwrap">
+                        <img class="image" src="images/limbs/graphene.jpg">
+                        <p class="description">Galaxy Crescent (Beginner)<br><br>The Galaxy Crescent is one of the cheapest ILF risers on the market. It has all the necessary accessory mounts
+                            and is lightweight at 2.01 lbs, making it ideal for younger archers. It is a great entry level choice. However, the paint scratches easily and the bow will need to be replaced
+                            as it is not made to last long-term. It is constructed from magnesium.</p>
+                    </div>
+                    <div><button type="button" class="limbs" id="graphene">$799.99</button></div>
                 </div>
             </td>
         </tr>
@@ -172,23 +228,65 @@
                 </div>
             </td>
         </tr>
-        <form method="get" action="result.html">
-            <button style="top: 247.25%" class="next">Submit</button> <!--temporarily goes to result page, change it back to plunger later-->
+        <form method="get" action="#plunger">
+            <button style="top: 247.25%" class="next">Next</button>
         </form>
         <form method="get" action="#limbs">
             <button style="top: 247.25%" class="back">Back</button>
         </form>
     </table>
-<h2 id="plunger" style="padding-top: 20px">Plunger</h2>
 
-<h2 id="longrod" style="padding-top: 20px">Stabilizers: Long Rod</h2>
+<h2 id="plunger" style="padding-top: 20px; padding-bottom: 850px">Plunger</h2>
+    <table>
+        <form method="get" action="#longrod">
+            <button style="top: 344.3%" class="next">Next</button>
+        </form>
+        <form method="get" action="#sight">
+            <button style="top: 344.3%" class="back">Back</button>
+        </form>
+    </table>
 
-<h2 id="siderods" style="padding-top: 20px">Stabilizers: Side Rods</h2>
+<h2 id="longrod" style="padding-top: 20px; padding-bottom: 850px">Stabilizers: Long Rod</h2>
+    <table>
+        <form method="get" action="#siderods">
+            <button style="top: 447.2%" class="next">Next</button>
+        </form>
+        <form method="get" action="#plunger">
+        <button style="top: 447.2%" class="back">Back</button>
+        </form>
+    </table>
 
-<h2 id="vbar" style="padding-top: 20px">Stabilizers: V-Bar</h2>
+<h2 id="siderods" style="padding-top: 20px; padding-bottom: 850px">Stabilizers: Side Rods</h2>
+    <table>
+        <form method="get" action="#vbar">
+            <button style="top: 549.95%" class="next">Next</button>
+        </form>
+        <form method="get" action="#longrod">
+         <button style="top: 549.95%" class="back">Back</button>
+        </form>
+    </table>
+
+<h2 id="vbar" style="padding-top: 20px; padding-bottom: 850px">Stabilizers: V-Bar</h2>
+    <table>
+        <form method="get" action="result.html">
+            <button style="top: 652.95%" class="next">Submit</button>
+        </form>
+        <form method="get" action="#siderods">
+            <button style="top: 652.95%" class="back">Back</button>
+        </form>
+    </table>
 
 </body>
 <script>
+    var riser;
+    $('.riser').click(function () { //only allows one button to be selected on riser page at a time
+        if (!$(this).hasClass('active')) { //if the button is not active when pressed
+            $('.riser').removeClass('active'); //remove active class for all other riser buttons
+            $(this).toggleClass('active'); //make this active
+        } else {
+            $(this).toggleClass('active'); //if already active, makes it inactive
+        }
 
+    });
 </script>
 </html>
