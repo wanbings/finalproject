@@ -1,14 +1,6 @@
+var jQueryScript = document.createElement('script');
+jQueryScript.setAttribute('src','https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js');
+document.head.appendChild(jQueryScript);
 
-//main html
-let cost = 0;
-var riser; //declares all the necessary parts
-var limbs;
-var sight;
-var longrod;
-var siderods;
-var vbar;
+let total = document.querySelector('.totalcost');
 
-function updateCost(){
-    cost=99.99;
-    setTimeout(()=> {window.location.href='result.html'}, 5000);
-}
